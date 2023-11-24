@@ -12,26 +12,7 @@
   display: none;
 }
 
-/* .units__c, .units__f {
-  color: white;
-  padding: 6px 28px;
-  border: 2px solid white;
-  border-radius: 16px;
-} */
-
 .unit-current {
   background: rgba(255, 255, 255, 0.2);
   opacity: 1;
 }
-
-/* .units__f {
-  border-left: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.units__c {
-  border-right: none;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-} */

@@ -1,12 +1,9 @@
 const errorMessage = document.querySelector('.errorMessage');
-// const units = document.querySelector('.units');
 const map = document.getElementById('map');
 const weatherContainer = document.getElementById('weather__container');
 const weatherForm = document.getElementById('form__box');
 const formWrapper = document.getElementById('form');
 const cityName = document.querySelector('h1');
-const unitsC = document.getElementById('units-c');
-const unitsF = document.getElementById('units-f');
 const btnOpenForm = document.getElementById('openForm');
 const locationMy = document.getElementById('location__my');
 
