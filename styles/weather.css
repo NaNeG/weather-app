@@ -1,0 +1,46 @@
+.weather-info__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 15px;
+	margin: 0;
+	padding: 20px;
+}
+
+.weather-info__item {
+	padding: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 22px;
+	color: #000000;
+}
+
+.weather-info__item p {
+	margin-top: 10px;
+}
+
+.weather__inner {
+	position: relative;
+	border-radius: 10px;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+	font-size: 36px;
+  gap: 16px;
+}
+
+.weather__icon {
+	width: 48px;
+	height: 48px;
+}
+
+.weather__temperature_info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.weather__temperature_number {
+  font-size: 48px;
+}

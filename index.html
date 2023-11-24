@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<title>Weather</title>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=bf4ae213-7164-4e2e-ad89-af0b6de83d38&lang=ru_RU"
+			type="text/javascript"
+		></script>
+	</head>
+	<body>
+		<section class="container">
+			<div class="location__container">
+				<div>
+					<h1 class="location__city-name">Просмотр погоды</h1>
+					<div class="location__city-inner">
+						<button
+							onclick="toggleForm()"
+							class="btn-reset"
+							id="openForm"
+						>
+							Указать координаты
+						</button>
+						<button class="btn-reset" id="location__my">
+							Где я?
+						</button>
+						<span id="status"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="form hideElement" id="form">
+				<form class="form__box" id="form__box">
+					<div class="form__input">
+						<label class="form__text">Широта</label>
+						<input
+							type="number"
+							name="latitude"
+							min="-90"
+							max="90"
+							required="required"
+						/>
+					</div>
+					<div class="form__input">
+						<label class="form__text">Долгота</label>
+						<input
+							type="number"
+							min="-180"
+							max="180"
+							name="longitude"
+							required="required"
+						/>
+					</div>
+					<button class="form__button" type="submit">
+						Показать погоду
+					</button>
+					<p class="errorMessage"></p>
+				</form>
+			</div>
+		</section>
+
+		<section class="container">
+			<div class="weather__container" id="weather__container"></div>
+		</section>
+		<section class="map">
+			<div id="map" style="width: 100%; height: 500px"></div>
+		</section>
+		<script src="index.js"></script>
+		<script></script>
+	</body>
+</html>

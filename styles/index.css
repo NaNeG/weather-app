@@ -1,0 +1,56 @@
+@import './form.css';
+@import './location.css';
+@import './unit.css';
+@import './weather.css';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1226px;
+	flex-shrink: 0;
+	height: fit-content;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.map {
+	padding: 50px;
+	max-width: 1226px;
+	margin: 0 auto;
+}
+
+.hideElement {
+	display: none;
+}
+
+.errorMessage {
+  margin-top: 20px;
+	width: 300px;
+}
